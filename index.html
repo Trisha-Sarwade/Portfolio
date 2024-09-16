@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trisha Sarwade - Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your custom CSS -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8;
+        }
+        .intro-section {
+            text-align: center;
+            padding: 60px 0;
+            background-color: #003366;
+            color: #fff;
+        }
+        .intro-section h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        .intro-section p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+        .card-deck {
+            margin: 30px 0;
+        }
+        .card {
+            border: none;
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #003366;
+            color: #fff;
+        }
+        .social-icons a {
+            color: #003366;
+            margin: 0 10px;
+            font-size: 1.5rem;
+        }
+        .skills-container {
+            margin-top: 30px;
+        }
+        .skills-container h4 {
+            margin-bottom: 10px;
+        }
+        .skills-container ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .skills-container ul li {
+            background: #e6f0ff;
+            margin-bottom: 5px;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #cce0ff;
+        }
+        .profile-img {
+            border-radius: 50%;
+            width: 100%; /* Adjust width as needed */
+            max-width: 300px; /* Set a maximum width for larger screens */
+            height: auto; /* Maintain aspect ratio */
+        }
+        .about-me {
+            padding: 30px 0;
+            background-color: #e6f0ff;
+        }
+        .about-me h2 {
+            margin-bottom: 20px;
+            text-align: center;
+            color: #003366;
+        }
+        .about-me p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .about-me ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+        .about-me ul li {
+            background: #fff;
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            display: inline-block;
+            width: 80%;
+        }
+        .contact-section {
+            background-color: #cce0ff;
+            padding: 30px 0;
+        }
+        .contact-section h2 {
+            margin-bottom: 20px;
+            color: #003366;
+        }
+        .contact-section p {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .contact-section .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+        .contact-section .social-icons a {
+            background: #fff;
+            border-radius: 50%;
+            padding: 10px;
+            color: #003366;
+            transition: background 0.3s, color 0.3s;
+        }
+        .contact-section .social-icons a:hover {
+            background: #003366;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Trisha Sarwade</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Introduction Section -->
+    <section class="intro-section fade-in" id="about">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Image column -->
+                <div class="col-md-6 text-center">
+                    <img src="profile-photo.jpg" alt="Trisha Sarwade" class="img-fluid rounded-circle profile-img">
+                </div>
+                <!-- Text column -->
+                <div class="col-md-6">
+                    <h1>Hello, I'm Trisha Sarwade</h1>
+                    <p>I am an M.Tech Dual Degree student at IIT Kharagpur, specializing in Artificial Intelligence and Applications. My passion lies in data science, machine learning, and supply chain management. With a strong academic background and hands-on experience in diverse projects, I aim to leverage my skills to drive innovation and excellence in the industry.</p>
+                    <a href="#projects" class="btn btn-light btn-lg">Explore My Work</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section class="about-me container fade-in" id="about-me">
+        <h2>About Me</h2>
+        <p>When I'm not diving deep into data, you can find me engaging in a variety of activities that keep me both entertained and challenged. From dancing to playing chess, and from solving complex problems to contributing to community initiatives, I love staying active and exploring new interests.</p>
+        <ul>
+            <li>Proficient in Bharatanatyam, a classical Indian dance form that has taught me discipline and expression.</li>
+            <li>Passionate chess player with a knack for strategic thinking and problem-solving.</li>
+            <li>Cleared NTSE Level 1 with a State Rank of 21 in 2018, showcasing my aptitude for critical thinking and analytical skills.</li>
+            <li>Contributed to a Guinness World Record event organized by Analytics Vidhya, demonstrating my commitment to collaborative success.</li>
+            <li>Received a Letter of Appreciation for my research internship at Cambridge Judge Business School, where I worked on MSME projects and climate change impacts.</li>
+            <li>Active participant in the International Conference of Decision Support System Technology with a research paper on sentiment analysis.</li>
+            <li>Enjoyed various leadership roles, including serving as Secretary of Communique IIT Kharagpur and Wing Representative at Mother Teresa Hall of Residence.</li>
+            <li>Contributed to diverse projects and case studies, enhancing my knowledge in fields like supply chain management and digital business.</li>
+        </ul>
+        <p>In my spare time, I love experimenting with new technologies, exploring different cultures through travel, and indulging in a good book. My curiosity drives me to continuously learn and grow, and I look forward to bringing my unique blend of skills and interests to new challenges and opportunities.</p>
+    </section><br>
+
+    <!-- Projects Section -->
+    <section id="projects" class="container fade-in">
+        <h2 class="text-center">Highlighted Projects</h2>
+        <div class="card-deck">
+            <div class="card project-card">
+                <img src="federated-learning.jpg" class="card-img-top" alt="Federated Learning">
+                <div class="card-body">
+                    <h5 class="card-title">Federated Learning for Late Payment Risk Prediction</h5>
+                    <p class="card-text">Developed a federated learning model to predict late payment risks using advanced algorithms and integrated key features to improve risk assessment.</p>
+                </div>
+            </div>
+            <div class="card project-card">
+                <img src="portfolio-optimization.jpg" class="card-img-top" alt="Portfolio Optimization">
+                <div class="card-body">
+                    <h5 class="card-title">Portfolio Optimization</h5>
+                    <p class="card-text">Implemented linear and quadratic programming models to optimize asset portfolios, utilizing Python for mean-variance analysis and multi-objective optimization.</p>
+                </div>
+            </div>
+            <div class="card project-card">
+                <img src="supply-base-prediction.jpg" class="card-img-top" alt="Supply Base Prediction">
+                <div class="card-body">
+                    <h5 class="card-title">Web-based Prediction of Supply Base</h5>
+                    <p class="card-text">Created a predictive model for supply base prediction using machine learning techniques and developed a web application for interactive data visualization.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Additional Line -->
+        <p class="text-center mt-4">Explore all my projects and contributions on my  <a href="https://github.com/Trisha-Sarwade/Projects" target="_blank"> GitHub Projects</a>.</p>
+   
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="container skills-container fade-in">
+        <h2 class="text-center">Skills & Expertise</h2>
+        <div class="row">
+            <div class="col-md-3">
+                <h4>Languages</h4>
+                <ul>
+                    <li>C</li>
+                    <li>C++</li>
+                    <li>Python</li>
+                    <li>R</li>
+                    <li>JavaScript</li>
+                    <li>MySQL</li>
+                    <li>PHP</li>
+                    <li>Golang</li>
+                    <li>Node.js</li>
+                    <li>Scala</li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h4>Software Tools</h4>
+                <ul>
+                    <li>Axtria DataMax</li>
+                    <li>Snowflake</li>
+                    <li>Amazon S3</li>
+                    <li>Apache Spark</li>
+                    <li>IBM ILOG CPLEX</li>
+                    <li>ProwessIq</li>
+                    <li>Lingo</li>
+                    <li>Arena</li>
+                    <li>Anaconda</li>
+                    <li>Jupyter Notebook</li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h4>Libraries</h4>
+                <ul>
+                    <li>Pandas</li>
+                    <li>NumPy</li>
+                    <li>Keras</li>
+                    <li>TensorFlow</li>
+                    <li>Scikit Learn</li>
+                    <li>PyTorch</li>
+                    <li>Matplotlib</li>
+                    <li>Seaborn</li>
+                    <li>Textblob</li>
+                    <li>Gensim</li>
+                    <!-- <li>SpaCy</li> -->
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h4>Coursework</h4>
+                <ul>
+                    <li>Optimization Methods in Finance</li>
+                    <li>Financial Engineering</li>
+                    <li>Supply Chain Management</li>
+                    <li>Big Data Processing</li>
+                    <li>Big Data Analysis</li>
+                    <li>Product Development</li>
+                    <li>Game Theory</li>
+                    <li>Statistical Learning</li>
+                    <li>Operations Research</li>
+                    <li>Foundations of Digital Business</li>
+                    <!-- <li>Probability and Statistics</li> -->
+                </ul>
+            </div>
+        </div>
+    </section><br>
+
+    <!-- Contact Me Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>If you would like to get in touch or have any questions, feel free to connect with me on social media or via email. I'm always open to new opportunities and collaborations!</p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/trishasarwade" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/trishasarwade" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+                <a href="mailto:trishasarwade@example.com" class="social-icon"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <p>&copy; 2024 Trisha Sarwade.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
